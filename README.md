@@ -1,24 +1,63 @@
-<h1>Encryption Software Application</h1>
+# Encryption Software Application
 
-<h2>Description</h2>
-In this project, I developed a versatile Python application for encrypting and decrypting text and files using Advanced Encryption Standard (AES) and Triple Data Encryption Standard (DES3) algorithms. The application provides a user-friendly interface where users can input any text or select any file for encryption. By employing AES and DES3, the application ensures high levels of security and data protection.
+## Description  
+This Python-based application provides encryption and decryption capabilities for text and files using the Advanced Encryption Standard (AES) and Triple Data Encryption Standard (DES3) algorithms. It ensures data confidentiality by transforming readable information into an unreadable format, which can only be reversed with the correct key.  
 
-The encryption process converts the input data into an unreadable format, ensuring that sensitive information remains confidential and secure. The application also includes a decryption feature, allowing users to revert the encrypted data back to its original form when needed.
+The application includes:  
+- **Text and File Encryption/Decryption**: Encrypts and decrypts both text inputs and file contents.  
+- **Algorithm Selection**: Supports AES (128/256-bit) and DES3 encryption methods.  
+- **Security Testing**: Implements brute force and sensitivity tests to assess encryption strength.  
 
-To further enhance the security and reliability of the encryption, the application incorporates two types of security tests: brute force tests and sensitivity tests. The brute force test evaluates the strength of the encryption by simulating attack attempts, ensuring that the encryption keys are robust and difficult to crack. The sensitivity test examines the impact of small changes in the input data on the encrypted output, highlighting the effectiveness of the algorithms in maintaining data integrity and security.
+## Core Features  
 
-Through this project, I gained extensive experience in implementing encryption algorithms, managing file operations, and conducting security assessments. The application not only serves as a practical tool for securing sensitive information but also provides valuable insights into the robustness of encryption methods against potential cyber threats.
-<br />
+1. **Encryption/Decryption**:  
+   - Accepts user input (text or file) and encrypts it with a selected algorithm.  
+   - Decrypts encrypted data using the correct key.  
 
+2. **Algorithm Selection**:  
+   - **AES (Advanced Encryption Standard)**: Symmetric encryption with variable key sizes (128, 192, or 256 bits).  
+   - **DES3 (Triple DES)**: Triple-layer encryption for improved security over standard DES.  
 
-<h2>Languages and Utilities Used</h2>
+3. **Security Tests**:  
+   - **Brute Force Test**: Simulates brute force attacks to evaluate key strength and algorithm resilience.  
+   - **Sensitivity Test**: Demonstrates the avalanche effect by measuring the impact of minor input changes on the encrypted output.  
 
-- <b>Python</b>
+4. **File Handling**:  
+   - Encrypts files of any type, with secure key management.  
+   - Handles large files efficiently without performance degradation.  
 
-<h2>Environments Used </h2>
+## Technical Details  
 
-- <b>Windows 10</b> 
-- <b>Visual Studio code </b> 
+- **Key Generation**:  
+  - AES: 128-bit or 256-bit keys generated with secure random functions.  
+  - DES3: 168-bit keys derived using the Python `Crypto` library.  
+
+- **Padding and Integrity**:  
+  - Uses PKCS#7 padding for text input to meet block size requirements.  
+  - Verifies input integrity during decryption to detect potential tampering.  
+
+- **Test Implementation**:  
+  - Brute force tests iterate through possible keys within a constrained range to simulate real-world attack scenarios.  
+  - Sensitivity tests compare outputs generated from inputs that differ by a single bit, demonstrating encryption robustness.  
+
+## Technologies Used  
+
+- **Python**: Application logic, encryption operations, and testing implementations.  
+- **Cryptography Library**: Handles AES and DES3 encryption.  
+
+## Environment  
+
+- **Operating System**: Windows 10.  
+- **Development Environment**: Visual Studio Code.  
+
+## Use Cases  
+
+- Protecting sensitive text and file-based information.  
+- Demonstrating encryption algorithm behavior for educational or testing purposes.  
+- Testing encryption resilience against brute force and input variation attacks.  
+
+This application provides a practical, secure, and scalable solution for encrypting and decrypting data, while also offering insight into the strength of different encryption algorithms.  
+
 
 
 
