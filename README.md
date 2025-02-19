@@ -1,7 +1,7 @@
 # Encryption Software Application
 
 ## Description
-This Python application provides text and file encryption using AES and DES3 algorithms. Users can encrypt and decrypt data to ensure confidentiality and integrity.
+In project i created a Python application that provides text and file encryption using AES and DES3 algorithms. Users can encrypt and decrypt data to ensure confidentiality and integrity.
 
 ## Features
 - Encrypt/Decrypt text and files with AES and DES3.
